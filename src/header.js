@@ -11,10 +11,13 @@ export default function headerLoader() {
 
     home.textContent = 'Home';
     home.setAttribute('id', 'home');
+    home.classList.add('tab');
     menu.textContent = 'Menu';
     menu.setAttribute('id', 'menu')
+    menu.classList.add('tab');
     contacts.textContent = 'Contacts';
     contacts.setAttribute('id', 'contacts');
+    contacts.classList.add('tab');
 
     uL.appendChild(home);
     uL.appendChild(menu);
