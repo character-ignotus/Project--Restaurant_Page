@@ -37,16 +37,16 @@ nav ul {
     flex-direction: column;
 }
 
-.top-section div {
-    border: 3px solid red;
+.top-section {
     text-align: center;
     color: #ffffff;
     font-weight: 800;
-    margin: 30px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
-.top-section div p:first-child {
+.top-section p:first-child {
     font-size: 60px;
+    border: 3px solid red;
 }
 
 .item {
