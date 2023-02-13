@@ -10,6 +10,13 @@ module.exports = {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
   },
+  devServer: {
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    open: true,
+    hot: true
+  },
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Restaurant Page',
