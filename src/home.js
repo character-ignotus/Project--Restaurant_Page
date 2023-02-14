@@ -1,25 +1,18 @@
 export default function homePageLoader() {
     const element = document.createElement('div');
-    const topElement = document.createElement('div');
-    const paragraphOne = document.createElement('p');
-    const paragraphTwo = document.createElement('p');
-
-    paragraphOne.textContent = 'Menu Page';
-    paragraphTwo.textContent = 'Scroll through our menu';
-
+    const imgSection = document.createElement('div');
+    const textSection = document.createElement('div');
+    const text = document.createElement('div');
+    const button = document.createElement('button');
     
+    element.classList.add('home-page');
 
-    topElement.classList.add('top-section');
-    
+    textSection.appendChild(text);
+    textSection.appendChild(button);
 
-    topElement.appendChild(paragraphOne);
-    topElement.appendChild(paragraphTwo);
+    element.appendChild(textSection);
+    element.appendChild(imgSection);
 
-    
 
-    
-
-    element.appendChild(topElement);
-    
     return element
 }

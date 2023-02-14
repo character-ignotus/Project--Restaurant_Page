@@ -28,6 +28,34 @@ nav ul {
     min-height: 100vh;
 }
 
+.home-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+.home-page div:nth-child(1) {
+    flex: 1;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.home-page div:nth-child(1) > div {
+    flex: 10;
+    background-color: orange;
+}   
+
+.home-page div:nth-child(1) > button {
+    flex: 1;
+    background-color: purple;
+}
+
+.home-page div:nth-child(2) {
+    flex: 1;
+    background-color: red;
+}
+
 .top-section {
     background-image: url(../images/ramen.jpg);
     background-size: cover;
