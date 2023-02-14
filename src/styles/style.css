@@ -64,7 +64,7 @@ nav ul {
 .home-page div:nth-child(1) > div {
     flex: 8;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }   
 
@@ -196,6 +196,11 @@ footer div {
 
     .item {
         flex-direction: column;
+        height: 650px;
+    }
+
+    .item-reverse {
+        flex-direction: column-reverse;
         height: 650px;
     }
 
