@@ -171,6 +171,24 @@ nav ul {
     border: 2px solid red;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+    color: #000;
+    padding: 0 0 7.5px 0;
+}
+
+footer div {
+    background-image: url(../images/github-logo.png);
+    background-size: cover;
+    background-position: center;
+    width: 22.5px;
+    height: 22.5px;
+}
+
 @media (max-width: 750px) {
     header {
         padding: 0 30px;
