@@ -115,6 +115,23 @@ nav ul {
     background-position: center;
 }
 
+.contacts {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.contact-boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    height: 100px;
+    border: 2px solid red;
+}
+
 @media (max-width: 750px) {
     .item {
         flex-direction: column;
