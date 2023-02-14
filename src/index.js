@@ -9,6 +9,8 @@ document.body.insertBefore(headerLoader(), document.querySelector('#content'));
 document.querySelector('#content').appendChild(homePageLoader());
 document.body.appendChild(footerLoader());
 
+document.getElementById('home').style.textDecoration = 'underline';
+
 const removeContent = () => {
     const content = document.querySelector('#content');
     content.removeChild(content.firstElementChild);
@@ -19,6 +21,10 @@ const switchTabs = (() => {
 
     tabs.forEach((tab) => {
         tab.addEventListener('click', (e) => {
+            document.getElementById('home').style.textDecoration = 'none';
+            document.getElementById('menu').style.textDecoration = 'none';
+            document.getElementById('contacts').style.textDecoration = 'none';
+            e.target.style.textDecoration = 'underline';
             removeContent();
             if(e.target.getAttribute('id') == 'home') {
                 document.querySelector('#content').appendChild(homePageLoader());
