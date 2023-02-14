@@ -14,18 +14,33 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 20px;
     height: 50px;
+    padding: 12.5px 75px 0 75px;
+}
+
+header > div {
+    flex: 1;
+    color: #c68e61;
+    font-size: 1.35rem;
+    font-weight: 900;
 }
 
 nav {
-    flex-grow: 1;
-    padding: 0 100px 0 100px;
+    flex: 0.5;
+    color: #ffffff;
 }
 
 nav ul {
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
+    gap: 50px;
+    cursor: pointer;
+}
+
+#home {
+    text-decoration-color: red;
 }
 
 #content {
@@ -69,6 +84,7 @@ nav ul {
     font-size: 1.5rem;
     font-weight: 800;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .home-page div:nth-child(2) {
@@ -156,6 +172,10 @@ nav ul {
 }
 
 @media (max-width: 750px) {
+    header {
+        padding: 0 30px;
+    }
+
     .item {
         flex-direction: column;
         height: 650px;

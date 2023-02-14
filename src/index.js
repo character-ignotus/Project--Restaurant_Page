@@ -10,6 +10,7 @@ document.querySelector('#content').appendChild(homePageLoader());
 document.body.appendChild(footerLoader());
 
 document.getElementById('home').style.textDecoration = 'underline';
+document.getElementById('home').style.textDecorationColor = '#c68e61';
 
 const removeContent = () => {
     const content = document.querySelector('#content');
@@ -25,6 +26,8 @@ const switchTabs = (() => {
             document.getElementById('menu').style.textDecoration = 'none';
             document.getElementById('contacts').style.textDecoration = 'none';
             e.target.style.textDecoration = 'underline';
+            e.target.style.textDecorationColor = '#c68e61';
+
             removeContent();
             if(e.target.getAttribute('id') == 'home') {
                 document.querySelector('#content').appendChild(homePageLoader());
