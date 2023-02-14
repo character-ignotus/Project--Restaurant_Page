@@ -7,6 +7,10 @@
     list-style: none;
 }
 
+body {
+    background-color: #1d1f1c;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -30,30 +34,49 @@ nav ul {
 
 .home-page {
     display: flex;
+    gap: 50px;
     min-height: 100vh;
+    padding: 50px 150px 75px 75px;
 }
 
 .home-page div:nth-child(1) {
     flex: 1;
-    background-color: blue;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    gap: 10px;
 }
 
 .home-page div:nth-child(1) > div {
-    flex: 10;
-    background-color: orange;
+    flex: 8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }   
 
+.home-page div:nth-child(1) > div > p {
+    font-size: 7rem;
+    font-weight: 900;
+    color: #ffffff;
+    font-style: italic;
+}  
+
 .home-page div:nth-child(1) > button {
-    flex: 1;
-    background-color: purple;
+    align-self: center;
+    height: 55px;
+    width: 180px;
+    background-color: #1d1f1c;
+    border: 0.5px solid #cac8c8;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
 }
 
 .home-page div:nth-child(2) {
     flex: 1;
-    background-color: red;
+    background-image: url(../images/home-page.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 8px 8px 8px #0c0c0c;
 }
 
 .top-section {
@@ -136,5 +159,13 @@ nav ul {
     .item {
         flex-direction: column;
         height: 650px;
+    }
+
+    .home-page div:nth-child(2) {
+        display: none;
+    }
+
+    .home-page {
+        padding: 100px 30px;
     }
 }
