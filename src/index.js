@@ -6,7 +6,7 @@ import contactsPageLoader from './contacts';
 import './styles/style.css'
 
 document.body.insertBefore(headerLoader(), document.querySelector('#content'));
-document.querySelector('#content').appendChild(menuPageLoader());
+document.querySelector('#content').appendChild(homePageLoader());
 document.body.appendChild(footerLoader());
 
 const removeContent = () => {
