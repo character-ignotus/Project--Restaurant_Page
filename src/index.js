@@ -2,6 +2,7 @@ import headerLoader from './header';
 import footerLoader from './footer';
 import homePageLoader from './home';
 import menuPageLoader from './menu';
+import contactsPageLoader from './contacts';
 import './styles/style.css'
 
 document.body.insertBefore(headerLoader(), document.querySelector('#content'));
@@ -21,10 +22,10 @@ const switchTabs = (() => {
             removeContent();
             if(e.target.getAttribute('id') == 'home') {
                 document.querySelector('#content').appendChild(homePageLoader());
-                console.log(e.target.getAttribute('id'));
             } else if(e.target.getAttribute('id') == 'menu') {
                 document.querySelector('#content').appendChild(menuPageLoader());
-                console.log(e.target.getAttribute('id'));
+            } else {
+                document.querySelector('#content').appendChild(contactsPageLoader());
             }
         })
     })
