@@ -10,11 +10,11 @@ export default function contactsPageLoader() {
     const socialMediaLable = document.createElement('div');
     const socialMediaAddress = document.createElement('div');
 
-    phoneLable.textContent = 'Phone Number';
+    phoneLable.textContent = 'Phone Number:';
     phoneNumber.textContent = '0987654321';
-    emailLable.textContent = 'E-Mail';
+    emailLable.textContent = 'E-Mail:';
     emailAddress.textContent = 'sample00@mail.com';
-    socialMediaLable.textContent = 'Twitter';
+    socialMediaLable.textContent = 'Twitter:';
     socialMediaAddress.textContent = '@example';
 
     element.classList.add('contacts')
