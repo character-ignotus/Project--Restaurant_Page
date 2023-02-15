@@ -232,7 +232,11 @@ footer div {
 
 @media (max-width: 750px) {
     header {
-        padding: 0 30px;
+        padding: 15px;
+    }
+
+    nav ul {
+        gap: 30px;
     }
 
     .item {
@@ -250,5 +254,10 @@ footer div {
 
     .home-page {
         padding: 100px 30px;
+    }
+
+    .contact-boxes {
+        padding: 30px 10px;
+        font-size: 1rem;
     }
 }
